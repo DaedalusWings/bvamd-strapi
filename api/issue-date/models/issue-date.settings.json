@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "issue_dates",
+  "info": {
+    "name": "issueDate"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "department": {
+      "model": "department"
+    },
+    "jahrgang": {
+      "type": "string"
+    },
+    "ausgabe": {
+      "type": "string"
+    },
+    "issue_date_names": {
+      "collection": "issue-date-name",
+      "via": "issue_dates"
+    },
+    "issuedate": {
+      "type": "date"
+    }
+  }
+}

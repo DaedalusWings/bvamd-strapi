@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/issue-dates",
+      "handler": "issue-date.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/issue-dates/count",
+      "handler": "issue-date.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/issue-dates/:id",
+      "handler": "issue-date.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/issue-dates",
+      "handler": "issue-date.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/issue-dates/:id",
+      "handler": "issue-date.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/issue-dates/:id",
+      "handler": "issue-date.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

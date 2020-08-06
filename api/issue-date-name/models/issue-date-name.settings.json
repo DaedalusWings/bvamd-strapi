@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "issue_date_names",
+  "info": {
+    "name": "issueDateName"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "issue_dates": {
+      "via": "issue_date_names",
+      "collection": "issue-date",
+      "dominant": true
+    }
+  }
+}
