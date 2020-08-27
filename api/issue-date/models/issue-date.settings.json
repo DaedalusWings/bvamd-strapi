@@ -24,6 +24,9 @@
     },
     "issuedate": {
       "type": "date"
+    },
+    "topic": {
+      "type": "text"
     }
   }
 }
